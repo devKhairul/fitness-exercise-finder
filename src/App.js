@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 import Home from './pages/Home';
