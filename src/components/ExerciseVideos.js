@@ -13,13 +13,16 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
             >
                 {exerciseVideos?.slice(0,6).map((item, index) => {
                     return (
-                        <a key={index}
+                        <>
+                            <a key={index}
                             className="exercise-video"
                             href={`https://youtube.com/watch?v=${item.video.videoId}`}
                             target="_blank"
-                        >
-                            <img src={item.video.thumbnails[0].url} alt={name} />
-                        </a>
+                            >
+                                <img src={item.video.thumbnails[0].url} alt={name} />
+                            </a>
+                        </>
+                        
                     )
                 })}
             </Stack>
