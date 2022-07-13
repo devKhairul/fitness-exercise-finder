@@ -23,6 +23,7 @@ const ExerciseCard = ({ exercise }) => {
             {exercise.name}
         </Typography>
 
+
     </Link>
 
   )
